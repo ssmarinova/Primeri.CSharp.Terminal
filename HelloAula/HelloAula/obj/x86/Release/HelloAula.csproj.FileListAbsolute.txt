@@ -1,0 +1,4 @@
+C:\aula\primer1\HelloAula\HelloAula\bin\Release\HelloAula.exe
+C:\aula\primer1\HelloAula\HelloAula\bin\Release\HelloAula.pdb
+C:\aula\primer1\HelloAula\HelloAula\obj\x86\Release\HelloAula.exe
+C:\aula\primer1\HelloAula\HelloAula\obj\x86\Release\HelloAula.pdb
