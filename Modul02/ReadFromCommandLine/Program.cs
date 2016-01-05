@@ -31,13 +31,16 @@ namespace ReadFromCommandLine
 			test += ", 25";
 			test += ", 5";
 
+			//Събира горните данни на един ред с разделител запетайка и интервал
 			Console.WriteLine ("Събиране с += " + test + "\n");
-			Console.WriteLine ("2-ти знак: " + test.Split (',')[3] + "\n\n\n");
+			//Показва кой е четвъртия знак, т.е. след (разделител) номер 3
+			Console.WriteLine ("4-ти знак: " + test.Split (',')[3] + "\n\n\n");
 
 
+			//променя разделителя
 			test = test.Replace (", ", ";");
 			Console.WriteLine ("Работа с Replace: " + test + "\n");
-		
+			//Показва кой е третия знак, т.е. след (разделител) номер 2
 			Console.WriteLine ("3-ти знак: " + test.Split (';')[2]+ "\n\n\n");
 			
 		
