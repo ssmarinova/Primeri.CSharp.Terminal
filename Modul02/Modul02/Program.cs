@@ -35,23 +35,20 @@ namespace Modul02
 			a *= b; // a=a*b
 			Console.WriteLine (a);
 
+			Console.WriteLine ("\n Използване на /="); //Делението е по-специфично примери по-долу
+			a /= b; // a=a*b
+			Console.WriteLine (a);
 
 			Console.WriteLine ("\n Използване на ++");
 			a ++; //, a=a+1
 			Console.WriteLine (a);
 
-			Console.WriteLine ("Стандартно делене: " + ( 14 / 4 ).ToString()); // ->2
-			Console.WriteLine ("Остатък от делене: " + ( 14 % 4 ).ToString()); // ->1
-
-
-
-
-
 			Console.WriteLine ("\n Използване на --");
 			a --; // a=a-1
 			Console.WriteLine (a);
 
-
+			Console.WriteLine ("Стандартно делене: " + ( 14 / 4 ).ToString()); // дава цялото число от делението
+			Console.WriteLine ("Остатък от делене: " + ( 14 % 4 ).ToString()); // дава неразделената част от делимото
 		}
 	}
 }
