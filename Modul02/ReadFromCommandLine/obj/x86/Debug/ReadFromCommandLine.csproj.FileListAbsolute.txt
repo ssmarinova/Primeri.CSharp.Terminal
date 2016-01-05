@@ -1,0 +1,4 @@
+C:\aula\primer1\Modul02\ReadFromCommandLine\bin\Debug\ReadFromCommandLine.exe
+C:\aula\primer1\Modul02\ReadFromCommandLine\bin\Debug\ReadFromCommandLine.pdb
+C:\aula\primer1\Modul02\ReadFromCommandLine\obj\x86\Debug\ReadFromCommandLine.exe
+C:\aula\primer1\Modul02\ReadFromCommandLine\obj\x86\Debug\ReadFromCommandLine.pdb
