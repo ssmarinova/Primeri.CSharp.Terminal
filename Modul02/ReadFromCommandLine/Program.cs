@@ -8,13 +8,13 @@ namespace ReadFromCommandLine
 		{
 
 			//Дефиниране на променливи
-			int a = 6, b = 0;
+//			int a = 6, b = 0;
 
 
 
 			//Въвеждане на параметри - пояснява на колко е равно a и изисква въвеждане на b
-			Console.Write ("a=" + (a)+", Моля въведете b: ");
-			b= Convert.ToInt32 (Console.ReadLine ());
+//			Console.Write ("a=" + (a)+", Моля въведете b: ");
+//			b= Convert.ToInt32 (Console.ReadLine ());
 
 			// проба от въпросите под видеото
 //			string input = Console.ReadLine ();
@@ -23,13 +23,14 @@ namespace ReadFromCommandLine
 
 
 			//Печат на резултат
-			Console.WriteLine ( "резултата a+b е: " +(a+b).ToString()+ "\n\n\n");
+//			Console.WriteLine ( "резултата a+b е: " +(a+b).ToString()+ "\n\n\n");
 		
 			string test = "1";
 			test += ", 2";
 			test += ", 100";
 			test += ", 25";
 			test += ", 5";
+
 
 			//Събира горните данни на един ред с разделител запетайка и интервал
 			Console.WriteLine ("Събиране с += " + test + "\n");
@@ -44,6 +45,40 @@ namespace ReadFromCommandLine
 			Console.WriteLine ("3-ти знак: " + test.Split (';')[2]+ "\n\n\n");
 			
 		
+
+			//Задача 1 след видеото
+			string H= "Hello";
+			string W = "World";
+			object T = H +" "+ W;
+			string R = "";
+			R = Convert.ToString (T);
+			Console.WriteLine (R +"!"+"\n\n\n");
+
+
+			string br = "";
+			string duma = "";
+
+			Console.Write ("Моля въведете число: ");
+			br = Convert.ToString (Console.ReadLine ());
+			Console.Write ("Моля въведете дума: ");
+			duma = Convert.ToString (Console.ReadLine ());
+			string conc = br + duma;
+			Console.WriteLine ("Общият брой на символите от въведените данни е: " + conc.Length);
+			 
+
+//			string str = "STRING";
+//			Console.WriteLine( "The length of string {0} is {1}", str, str.Length );
+
+
+
+
+
+
+
+
+
+
+
 		}
 	}
 }
