@@ -55,9 +55,9 @@ namespace ReadFromCommandLine
 			Console.WriteLine (R +"!"+"\n\n\n");
 
 
+			//Задача 2 след видеото 
 			string br = "";
 			string duma = "";
-
 			Console.Write ("Моля въведете число: ");
 			br = Convert.ToString (Console.ReadLine ());
 			Console.Write ("Моля въведете дума: ");
@@ -66,8 +66,7 @@ namespace ReadFromCommandLine
 			Console.WriteLine ("Общият брой на символите от въведените данни е: " + conc.Length);
 			 
 
-//			string str = "STRING";
-//			Console.WriteLine( "The length of string {0} is {1}", str, str.Length );
+
 
 
 
