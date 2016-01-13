@@ -4,6 +4,8 @@ namespace TableProject
 {
 	class MainClass
 	{
+		enum ti {ime = 0, familia, godini};
+
 		public static void Main (string[] args)
 		{
 
@@ -11,17 +13,21 @@ namespace TableProject
 			string[,] table = new string[2,3];
 
 			//Въвеждане на първи ред
-			table[0,0] = "Мартин"; table[0,1] = "Симеонов";table[0,2] = "31";
+			table[0,(int) ti.ime ] = "Мартин";		table[0,(int) ti.familia] = "Симеонов"; 	table[0,(int) ti.godini] = "31";
 
 
 			//Въвждане на втори ред
-			table[1,0] = "Симеон"; table[1,1] = "Мартинов";table[1,2] = "41";
+			table[1,(int) ti.ime ] = "Симеон";  	table[1,(int) ti.familia] = "Мартинов"; 	table[1,(int) ti.godini] = "41";
 
 			//Отпечатване
 			Console.Write ("Кой ред искате да видите: ");
 			int _ind = Convert.ToInt32 (Console.ReadLine ())-1;
 
-			Console.WriteLine ((table [_ind, 0]) [0] + ". " + table [_ind, 1] + " " + table [_ind, 2] + " г.");
+			Console.WriteLine (
+				(table [_ind, (int) ti.ime]) [0] + ". " + 
+				 table [_ind, (int) ti.familia]  + " "  + 
+				 table [_ind, (int) ti.godini]   + " г."
+			);
 
 
 
@@ -47,8 +53,8 @@ namespace TableProject
 //
 //
 //			//Разделяне на стринг (списък) в масив
-//			string[] parse = "1,2,3,4,5,6,7,8,9".Split(',');
-//			Console.WriteLine ("Броят на елементите в масива:\n" + "1,2,3,4,5,6,7,8,9\ne: " + parse.Length);
+//			string[] parse = "1,(int) ti.godini,3,4,5,6,7,8,9".Split(',');
+//			Console.WriteLine ("Броят на елементите в масива:\n" + "1,(int) ti.godini,3,4,5,6,7,8,9\ne: " + parse.Length);
 //			Console.WriteLine ("\n" + "---------" + "\n");
 //
 //			//Събиране на масив в стринг
@@ -107,34 +113,34 @@ namespace TableProject
 			//
 //
 //
-//			Задача 2 - недовършена
-			Console.WriteLine ("Задача 2");
-			int [] Z2a = new int[10];
-			for (int j1 =0; j1<10; j1++) {
-				Z2a [j1] = j1*5;
-			}
-
-			int [] Z2b = new int[15];
-			for (int j2 =0; j2<15; j2++) {
-				Z2b [j2] = j2*5;
-			}
-
-			int d1 = Z2a.Length;
-			int d2 = Z2b.Length;
-
-			object d3 = (d1 = d2);
-							
-			if (d3) {
-				for (int x =0; x<20;x++) {
-					object st = (Z2a [x] = Z2a [x]);
-
-					if (st) {
-						Console.WriteLine("Масивите са еднакви");
-						Console.WriteLine("Масивите не са еднакви");
-					};
-				};
-			Console.WriteLine("Масивите не са еднакви");
-			}
+////			Задача 2 - недовършена
+//			Console.WriteLine ("Задача 2");
+//			int [] Z2a = new int[10];
+//			for (int j1 =0; j1<10; j1++) {
+//				Z2a [j1] = j1*5;
+//			}
+//str
+//			int [] Z2b = new int[15];
+//			for (int j2 =0; j2<15; j2++) {
+//				Z2b [j2] = j2*5;
+//			}
+//
+//			int d1 = Z2a.Length;
+//			int d2 = Z2b.Length;
+//
+//			object d3 = (d1 = d2);
+//							
+//			if (d3) {
+//				for (int x =0; x<20;x++) {
+//					object st = (Z2a [x] = Z2a [x]);
+//
+//					if (st) {
+//						Console.WriteLine("Масивите са еднакви");
+//						Console.WriteLine("Масивите не са еднакви");
+//					};
+//				};
+//			Console.WriteLine("Масивите не са еднакви");
+//			}
 
 
 
