@@ -1,20 +1,29 @@
-﻿using System;
+﻿using System; //стартиране на програмата
+//програмата съдържа namespase, класове и методи. 
+//всеки от тях започва с { и завършва с }
 
-namespace TableProject
-{
-	class MainClass
-	{
-		enum ti {ime = 0, familia, godini};
+namespace TableProject //namespase - второ ниво - може да съдържа много класове
+{  //начало на namespase
+	
+	class MainClass  //клас - може да съдържа много методи
+	{   //начало на класа
 
-		public static void Main (string[] args)
-		{
+		//Дефиниране на индекси за колоните. Това се прави с цел по-четим и разбираем код. 
+		//Дефинира се поне на ниво клас, може и по-високо
+		enum ti {ime = 0, familia, godini}; 
+
+
+		public static void Main (string[] args) //метод
+		{ //начало на метода
+
 
 			//Дефиниране на двумерен масив
 			string[,] table = new string[2,3];
 
 			//Въвеждане на първи ред
 			table[0,(int) ti.ime ] = "Мартин";		table[0,(int) ti.familia] = "Симеонов"; 	table[0,(int) ti.godini] = "31";
-
+			//enum по дефиниция е integer. Да се ползва когато сме сигурни че данните са int. 
+			//enum не е полезен за редовете на таблицата тъй като той е с ограничен размер - до дефинираното по-горе. 
 
 			//Въвждане на втори ред
 			table[1,(int) ti.ime ] = "Симеон";  	table[1,(int) ti.familia] = "Мартинов"; 	table[1,(int) ti.godini] = "41";
@@ -31,10 +40,14 @@ namespace TableProject
 
 
 
+		}   //край на метода
+	}   //край на класа
+}  //край на namespase
+
+  
 
 
-
-//			//Дефиниране на масив row с три елемента
+//Дефиниране на масив row с три елемента
 //			string[] row = new string[3];
 //			row [0] = "Ред 1";
 //			row [1] = "Ред 2";
@@ -110,7 +123,7 @@ namespace TableProject
 //			}
 //			Console.ReadLine();
 
-			//
+//
 //
 //
 ////			Задача 2 - недовършена
@@ -147,14 +160,6 @@ namespace TableProject
 
 
 
-
-
-
-
-
-		}
-	}
-}
 
 //			//Ротативката :) от упражнението след урока ;)
 //			string[] f = {"портокали","банани","лимони"};
