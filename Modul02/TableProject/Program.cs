@@ -36,7 +36,7 @@ namespace TableProject
 //
 //			//Отпечатване на масива
 //			Console.WriteLine ("Масив row: " + row [0]+","+ row [1]+","+ row [2]+"\n");
-//			Console.WriteLine ("\n" + "---------" + "\n");
+////			Console.WriteLine ("\n" + "---------" + "\n");
 //
 //
 //			//Отпечатване на масива с цикъл
@@ -75,8 +75,8 @@ namespace TableProject
 //			След това тези стойности в масива да се изведат в обратен ред
 
 
-////			Задача 1
-//
+//////			Задача 1
+//////
 //			int [] Z1 = new int[20];
 //			for (int j =0; j<20; j++) {
 //				Z1 [j] = j*5;
@@ -85,42 +85,56 @@ namespace TableProject
 //				Console.WriteLine ("За елемент " + j+ " от масива цифрата е: " + Z1 [j]+";");
 //			}
 //
+//			Console.WriteLine ("\n");
+//
+//			for (int j = 0; j < 19; j++) {
+//				Console.Write (Z1[j]+";");
+//			}
+//			Console.Write (Z1 [19]);
+//
 //			Console.WriteLine ("\n" + "---------" + "\n");
 //
-//
-//
-////			Задача 2 - недовършена
-//			Console.WriteLine ("Задача 2");
-//			int [] Z2a = new int[10];
-//			for (int j1 =0; j1<10; j1++) {
-//				Z2a [j1] = j1*5;
+//			// Решение на колега от форума
+//			int[] input = new int[21] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20};
+//			for (int i = 0; i < input[20]; i++)
+//			{
+//				int multi;
+//				multi = 5 * input[i];
+//				Console.Write("{0},",multi);
 //			}
+//			Console.ReadLine();
+
+			//
 //
-//			int [] Z2b = new int[15];
-//			for (int j2 =0; j2<15; j2++) {
-//				Z2b [j2] = j2*5;
-//			}
 //
-//			int d1 = Z2a.Length;
-//			int d2 = Z2b.Length;
-//
-//			bool elem1 = (d1 > d2);
-//			bool elem2 = (d1 < d2);
-//
-//				
-//			Console.WriteLine (elem1);
-//			Console.WriteLine (elem2);
-//			if (elem1) {
-//				for (int x =0; x<20;x++) {
-//					bool st = (Z2a [x] > Z2a [x]);
-//
-//					if (st) {
-//						Console.WriteLine("Масивите са еднакви");
-//						Console.WriteLine("Масивите не са еднакви");
-//					};
-//				};
-//			Console.WriteLine("Масивите са еднакви");
-//			}
+//			Задача 2 - недовършена
+			Console.WriteLine ("Задача 2");
+			int [] Z2a = new int[10];
+			for (int j1 =0; j1<10; j1++) {
+				Z2a [j1] = j1*5;
+			}
+
+			int [] Z2b = new int[15];
+			for (int j2 =0; j2<15; j2++) {
+				Z2b [j2] = j2*5;
+			}
+
+			int d1 = Z2a.Length;
+			int d2 = Z2b.Length;
+
+			object d3 = (d1 = d2);
+							
+			if (d3) {
+				for (int x =0; x<20;x++) {
+					object st = (Z2a [x] = Z2a [x]);
+
+					if (st) {
+						Console.WriteLine("Масивите са еднакви");
+						Console.WriteLine("Масивите не са еднакви");
+					};
+				};
+			Console.WriteLine("Масивите не са еднакви");
+			}
 
 
 
