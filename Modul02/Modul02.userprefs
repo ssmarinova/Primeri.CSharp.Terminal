@@ -1,6 +1,11 @@
-﻿<Properties StartupItem="TableProject\TableProject.csproj">
+﻿<Properties StartupItem="ZadachiVideo07\ZadachiVideo07.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|x86" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ZadachiVideo07\Program.cs">
+    <Files>
+      <File FileName="TableProject\Program.cs" Line="164" Column="3" />
+      <File FileName="ZadachiVideo07\Program.cs" Line="61" Column="8" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

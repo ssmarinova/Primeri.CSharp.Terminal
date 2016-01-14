@@ -1,1 +1,13 @@
-﻿<Properties StartupItem="BoolExplore\BoolExplore.csproj" />
+﻿<Properties StartupItem="BoolExplore\BoolExplore.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="BoolExplore\Program.cs">
+    <Files>
+      <File FileName="BoolExplore\Program.cs" Line="51" Column="4" />
+      <File FileName="Uprajnenia\Program.cs" Line="41" Column="4" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
