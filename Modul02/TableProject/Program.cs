@@ -40,6 +40,8 @@ namespace TableProject //namespase - второ ниво - може да съд�
 
 
 
+
+
 		}   //край на метода
 	}   //край на класа
 }  //край на namespase
@@ -126,13 +128,12 @@ namespace TableProject //namespase - второ ниво - може да съд�
 //
 //
 //
-////			Задача 2 - недовършена
-//			Console.WriteLine ("Задача 2");
+////			ЗадаLine ("Задача 2");
 //			int [] Z2a = new int[10];
 //			for (int j1 =0; j1<10; j1++) {
 //				Z2a [j1] = j1*5;
 //			}
-//str
+//
 //			int [] Z2b = new int[15];
 //			for (int j2 =0; j2<15; j2++) {
 //				Z2b [j2] = j2*5;
@@ -141,20 +142,26 @@ namespace TableProject //namespase - второ ниво - може да съд�
 //			int d1 = Z2a.Length;
 //			int d2 = Z2b.Length;
 //
-//			object d3 = (d1 = d2);
-//							
-//			if (d3) {
-//				for (int x =0; x<20;x++) {
-//					object st = (Z2a [x] = Z2a [x]);
+////			bool d3 = true;
+////			bool d3 = (d1 == d2);
 //
-//					if (st) {
-//						Console.WriteLine("Масивите са еднакви");
+////			Console.WriteLine (d3);
+//
+//			if (d1!=d2) {
+//				for (int x =0; x<20;x++) {
+//		//					bool st = true;
+//		//					st = (Z2a [x] != Z2a [x]);
+//
+//					if (Z2a [x] != Z2a [x]) {
 //						Console.WriteLine("Масивите не са еднакви");
-//					};
+//					}
+//						else {
+//							Console.WriteLine("Масивите са еднакви");
+//						}
 //				};
-//			Console.WriteLine("Масивите не са еднакви");
+//				Console.WriteLine("Масивите не са еднакви");
 //			}
-
+//
 
 
 
