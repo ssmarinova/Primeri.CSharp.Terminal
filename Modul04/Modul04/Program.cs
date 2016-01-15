@@ -21,16 +21,23 @@ namespace Modul04
 
 
 			//Тяло на таблица
-			for (int i = 0; i < tbl.Length / 3; i++) {
-				for (int j = 0; j < 3; j++) {
-					
-//				Код на цикъла
-					Console.Write (tbl [i, j].PadRight (12));
-				}
-				Console.WriteLine ();
+				//Пример с for
+//			for (int i = 0; i < tbl.Length / 3; i++) {
+//				for (int j = 0; j < 3; j++) {
+//					
+////				Код на цикъла
+//					Console.Write (tbl [i, j].PadRight (12));
+//				}
+//				Console.WriteLine ();
+//			}
+
+
+			//Пример в while
+			int i = 0;
+			while (i < tbl.Length / 3) {
+				Console.WriteLine (tbl[i,0].PadRight(12) + tbl[i,1].PadRight(12)+ tbl[i,2].PadRight(12));
+				i++;			
 			}
-
-
 
 
 			//Console.WriteLine ("Hello World!");
