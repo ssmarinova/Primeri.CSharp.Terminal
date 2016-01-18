@@ -1,0 +1,4 @@
+C:\aula\primer1\Modul05\Modul05\bin\Debug\Modul05.exe
+C:\aula\primer1\Modul05\Modul05\bin\Debug\Modul05.pdb
+C:\aula\primer1\Modul05\Modul05\obj\x86\Debug\Modul05.exe
+C:\aula\primer1\Modul05\Modul05\obj\x86\Debug\Modul05.pdb

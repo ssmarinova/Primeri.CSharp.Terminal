@@ -1,0 +1,4 @@
+C:\aula\primer1\Modul05\Modul05\bin\Release\Modul05.exe
+C:\aula\primer1\Modul05\Modul05\bin\Release\Modul05.pdb
+C:\aula\primer1\Modul05\Modul05\obj\x86\Release\Modul05.exe
+C:\aula\primer1\Modul05\Modul05\obj\x86\Release\Modul05.pdb

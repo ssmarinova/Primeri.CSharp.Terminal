@@ -1,9 +1,10 @@
 ﻿<Properties StartupItem="ListExplore\ListExplore.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Modul04\Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ListExplore\Program.cs">
     <Files>
-      <File FileName="Modul04\Program.cs" Line="40" Column="1" />
-      <File FileName="uprajnenia_sled_videa\Program.cs" Line="74" Column="29" />
+      <File FileName="Modul04\Program.cs" Line="27" Column="8" />
+      <File FileName="uprajnenia_sled_videa\Program.cs" Line="59" Column="4" />
+      <File FileName="ListExplore\Program.cs" Line="18" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
