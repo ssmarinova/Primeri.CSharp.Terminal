@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace uprajnenia_sled_videa
 {
@@ -6,6 +7,44 @@ namespace uprajnenia_sled_videa
 	{
 		public static void Main (string[] args)
 		{
+
+			/* ВИДЕО 07
+			 * Проверете дали в листа има "Драган" и го изпишете на екрана */
+			List<string> z = new List<string> ();
+			z.Add("Иван");
+			z.Add("Драган"); 
+			if (z.Contains("Драган")) Console.WriteLine("Драган е тук");
+
+
+			/*Нека да се престорим, че не знаем къде е мармалада и да го потърсим
+			След което ще го премахнем
+			И ще покажем целия лист чрез foreach. 
+			Този вид цикъл ще слага в променливата x всеки елемент от листа докато не ги свърши */
+
+			Action<string> cw = Console.WriteLine;
+			List<string> z = new List<string> ();
+
+			z.Add("ябълка");
+			z.Add("круша");
+			z.Add("мармалад");
+			z.Add("грозде");
+
+			foreach (string x in z) {cw(x);}
+
+			cw("\n");
+			int i = z.IndexOf ("мармалад");
+
+			z.RemoveAt (i);
+
+			foreach (string x in z) {cw(x);}
+
+
+
+
+
+
+
+
 
 			/* ВИДЕО 05
 		Две напред, една назад. Вашата задача тук е да напишете програма която да показва числата 2, 1, 3, 2, 4, 3, 5, 4 ... до 10.

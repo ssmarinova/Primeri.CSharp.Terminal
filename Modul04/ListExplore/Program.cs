@@ -23,24 +23,34 @@ namespace ListExplore
 			do {
 				Console.Write ("? ");
 				usimp = Console.ReadLine ();
+				 
+				// Добавяне на стойности = move da se dobawq samo add <int>
+				if(usimp.ToLower().Contains ("add")) {
+					try {
+						int pAdd = 0;
+						if( int.TryParse(usimp.Split(' ')[1], out pAdd)) {
+							mylist1.Add (pAdd);
+						}
+						Console.WriteLine();
 
-				// Добавяне на стойности
-
+					}catch {}
+				}
 
 				//Преглед на листа
-				if( usimp.Contains("show") ) {
+				if( usimp.ToLower().Contains("show") ) {
 					Console.Write ( "Съдържанието на листа е: ");
 					for (int i=0; i<mylist1.Count; i++) {
 						Console.Write (mylist1 [i]);
 
 						if ( i != mylist1.Count -1) Console.Write (", ");
 					}
-					Console.WriteLine ();
+					Console.WriteLine ("\n");
 				}
 
 				//размер на листа
-
-
+				if (usimp.ToLower().Contains("size")) {
+					Console.WriteLine ("размера на списъка: " + mylist1.Count.ToString() + "\n");
+				}
 
 
 			} while(usimp != "exit");
