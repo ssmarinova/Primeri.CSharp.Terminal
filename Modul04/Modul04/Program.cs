@@ -32,12 +32,24 @@ namespace Modul04
 //			}
 
 
-			//Пример в while
+			   //Пример в while
+//			int i = 0;
+//			while (i < tbl.Length / 3) {
+//				Console.WriteLine (tbl[i,0].PadRight(12) + tbl[i,1].PadRight(12)+ tbl[i,2].PadRight(12));
+//				i++;			
+//			}
+
+
+
+				// Пример с do ... wile
+
 			int i = 0;
-			while (i < tbl.Length / 3) {
+			do {
 				Console.WriteLine (tbl[i,0].PadRight(12) + tbl[i,1].PadRight(12)+ tbl[i,2].PadRight(12));
-				i++;			
-			}
+				i++;
+				}while(i < tbl.Length / 3);
+
+
 
 
 			//Console.WriteLine ("Hello World!");

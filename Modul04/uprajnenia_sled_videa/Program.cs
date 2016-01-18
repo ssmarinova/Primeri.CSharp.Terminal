@@ -71,7 +71,7 @@ namespace uprajnenia_sled_videa
 					}
 
 				}
-				if (found > 5) break; 		// Не искаме повече от 5 формули
+				if (found > 5) break; 		// Не искаме повече от 6 формули
 
 			}
 
