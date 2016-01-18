@@ -1,0 +1,4 @@
+C:\aula\primer1\Modul04\ListExplore\bin\Debug\ListExplore.exe
+C:\aula\primer1\Modul04\ListExplore\bin\Debug\ListExplore.pdb
+C:\aula\primer1\Modul04\ListExplore\obj\x86\Debug\ListExplore.exe
+C:\aula\primer1\Modul04\ListExplore\obj\x86\Debug\ListExplore.pdb
