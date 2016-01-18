@@ -7,6 +7,9 @@ namespace ListExplore
 	{
 		public static void Main (string[] args)
 		{
+			//Дефиниране на shrtcut към команда
+			Action<string> cwl = Console.WriteLine;
+
 
 			// Дефиниции
 			string usimp = "";
@@ -39,11 +42,20 @@ namespace ListExplore
 				//Преглед на листа
 				if( usimp.ToLower().Contains("show") ) {
 					Console.Write ( "Съдържанието на листа е: ");
-					for (int i=0; i<mylist1.Count; i++) {
-						Console.Write (mylist1 [i]);
 
-						if ( i != mylist1.Count -1) Console.Write (", ");
+					//Отпечатване на списъка с foreach
+					foreach (int val in mylist1){
+						Console.Write (val.ToString()+", ");
 					}
+
+
+
+					//Отпечатване на списъка с for
+//					for (int i=0; i<mylist1.Count; i++) {
+//						Console.Write (mylist1 [i]);
+//
+//						if ( i != mylist1.Count -1) Console.Write (", ");
+//					}
 					Console.WriteLine ("\n");
 				}
 

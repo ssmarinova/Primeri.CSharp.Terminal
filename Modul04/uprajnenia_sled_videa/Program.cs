@@ -8,6 +8,89 @@ namespace uprajnenia_sled_videa
 		public static void Main (string[] args)
 		{
 
+			/*ВИДЕО 09
+			 * В този пример може да видите някои от научените операции с листове
+			Опитайте се да анализирате програмата. 
+			Тя има за цел да извади срички от най-популярните брандове на планетата. 
+			След това ще се опита да създаде нови брандове, като комбинира тези срички.	*/
+
+
+			List<string> brands = new List<string> () {   
+				//Лист с популярни брандове
+				"sony","cocacola","pepsi","ibm","mentos","panasonic","fanta",
+				"sprite","apple","microsoft","google","mcdonalds","samsung",
+				"facebook","disney","pixar","amazon"};          
+			//Това е краткия начин по който да дефинираме и запълним лист
+
+			List<string> srichki = new List<string> ();  // Ще извадим срички от брандовете и ще ги сложим тук
+			int i =0;
+
+			List<string> glasni = new List<string>() {"a","e","i","o","u","y"};  // Тук ще държим гласните
+
+			foreach(string brand in brands) {
+
+				for(i=0; i<brand.Length-1; i++) {
+					if (glasni.Contains(brand[i].ToString()) ||    // Ако сричката няма гласна, то ще я отхвърлим
+						glasni.Contains(brand[i+1].ToString() ))
+						srichki.Add( ""+ brand[i]+brand[i+1] );      // Всички останали срички ги запомняме
+				}
+
+			}
+
+			Console.WriteLine("Открити срички: "+string.Join(" ",srichki)+"\n");   // Ще покажем сричките на екрана
+
+			var r = new Random();
+
+			string my_brand = "";   // Тук ще пишем произволни срички
+			Console.WriteLine("Нови брандове:");
+			for(int k=0; k<20; k++) { // Искаме да създадем 20 нови бранда
+				my_brand= ""; // Всеки път трябва да започваме от нищо
+				for(int j=0; j<r.Next(2,10); j++) { // Искаме новия бранд да е с от 2 до 10 срички
+
+					my_brand += srichki[ r.Next(0,srichki.Count-1) ]; // Добравяме произволна сричка към новия бранд
+				}
+				Console.WriteLine(my_brand); // Показваме новия бранд на екрана
+			}
+
+
+
+
+
+
+
+
+
+
+
+
+			/*ВИДЕО 08
+			 * Нека да разгледаме още полезни операции с листове. 
+			Първо ще ги сортираме по азбучен ред
+			След това ще ги покажем на екрана, като съберем всичките им елементи с Join
+			Сега обърнете листа и го покажете отново */
+
+			Action<string> cw = Console.WriteLine;
+			List<string> z = new List<string> ();
+
+			z.Add("ементал");
+			z.Add("дръжка");
+			z.Add("вафла");
+			z.Add("грозде");
+			z.Add("буркан");
+			z.Add("амфибия");
+
+			z.Sort ();
+			cw (string.Join (", ",z));
+
+			z.Reverse ();
+			cw (string.Join (", ",z));
+
+
+
+
+
+
+
 			/* ВИДЕО 07
 			 * Проверете дали в листа има "Драган" и го изпишете на екрана */
 			List<string> z = new List<string> ();
